@@ -7,7 +7,7 @@ function Home() {
       <img
         src={simon}
         alt="Simon le propriétaire du Montecito pose devant le bar"
-        className="simon"
+        className="banner"
       />
 
       <h1>Bienvenue au Montecito</h1>
