@@ -9,7 +9,7 @@
   --secondary-background-color : black;
   --dark-text-color: black;
   --light-text-color: white;
-
+  --box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 20px -5px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   /** Font properties **/
   --font-title : 'Corinthia', cursive;
   --font-text : 'Concert One', cursive;
@@ -26,6 +26,7 @@
   background-color: var(--main-background-color) ;
   color: white;
   border:none;
+  font-style: var(--font-text);
 }
 .container {
   display: flex;
@@ -54,8 +55,6 @@ header {
   background-color: inherit;
 }
 
-
-
 .flex {
   display: flex;
 }
@@ -64,6 +63,53 @@ header {
   justify-content: space-between;
 }
 
+.around {
+  justify-content: space-around;
+}
+
 .col {
   flex-direction: column;
+}
+
+.openBurger {
+  z-index: 1;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: open 0.25s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes open {
+  0% {
+    transform: scale(0);
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: 0% 0%;
+    opacity: 1;
+  }
+}
+
+
+
+.openBurger button {
+  width: 95%;
+  font-size: 3rem;
+  padding: 2rem 1rem;
+  box-shadow: var(--box-shadow);
+}
+
+.croix {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  margin-left: 0.5rem;
+}
+
+.croix img {
+  height: 3rem;
 }
