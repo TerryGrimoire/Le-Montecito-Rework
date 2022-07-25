@@ -35,7 +35,7 @@ a {
 h1 {
   text-align: right;
   font-size: 3rem;
-  padding: 6.5rem 2rem 8rem 5rem;
+  padding: 6.5rem 2rem 6.5rem 5rem;
 }
 
 h2 {
@@ -140,7 +140,7 @@ header {
 }
 
 .banner {
-  width: 120%;
+  width: 100%;
 }
 
 .padding1 {
