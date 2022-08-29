@@ -15,7 +15,9 @@ function Burger() {
           alt="menu de navigation sur le site internet - trois lignes de navigation"
         />
       </button>
-      <img src={logo} alt="logo of Montecito" className="logo-mobile" />
+      <Link to="/">
+        <img src={logo} alt="logo of Montecito" className="logo-mobile" />
+      </Link>
       {openBurger && (
         <nav className="flex col openBurger between">
           <button
