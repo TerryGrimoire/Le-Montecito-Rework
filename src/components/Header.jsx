@@ -8,7 +8,7 @@ function Burger() {
   const [openBurger, setOpenBurger] = useState(false);
 
   return (
-    <header className="dark flex between padding-header">
+    <header className="flex padding-header">
       <button type="button" onClick={() => setOpenBurger(!openBurger)}>
         <img
           src={burger}

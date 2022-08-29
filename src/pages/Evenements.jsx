@@ -1,19 +1,20 @@
 import React from "react";
+import LandingImage from "../components/LandingImage";
+import LandingImageData from "../data/LandingImageData";
 import evenement from "../assets/events.gif";
 
 function Evenements() {
   return (
     <div>
-      <img
-        src={evenement}
-        alt="gif de plusieurs evenements passés qui se succèdent"
-        className="banner"
-      />
-
-      <h1>Nos soirées évènements</h1>
+      <LandingImage data={LandingImageData[2]} />
 
       <article>
         <h2>Retrouvez tous nos évènements sur Facebook</h2>
+        <img
+          src={evenement}
+          alt="gif de plusieurs evenements passés qui se succèdent"
+          className="main-image"
+        />
         <p>
           Nos soirées et évènements sont listées sur notre page Facebook et sur
           notre compte instagram. Vous pouvez également nous contacter pour plus
