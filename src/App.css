@@ -23,7 +23,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
   color: white;
   background-color: var(--secondary-background-color);
   border:none;
