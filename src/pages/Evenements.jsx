@@ -1,6 +1,7 @@
 import React from "react";
 import LandingImage from "../components/LandingImage";
 import LandingImageData from "../data/LandingImageData";
+import facebook from "../assets/facebook.png";
 
 function Evenements() {
   return (
@@ -15,11 +16,12 @@ function Evenements() {
           d'informations sur ou si vous souhaitez faire un partenariat ou
           organiser des évènements au Montecito.
         </p>
-        <a href="https://www.facebook.com/montecito.nantes">
-          <button type="button" className="button-style">
-            {" "}
-            Consulter notre page Facebook
-          </button>
+        <a
+          href="https://www.facebook.com/montecito.nantes/events"
+          className="flex col center al-center"
+        >
+          <img src={facebook} alt="Facebook" className="m1-1" />
+          <p>Nos soirées</p>
         </a>
       </article>
     </div>

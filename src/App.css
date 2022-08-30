@@ -55,6 +55,13 @@ article {
   margin: 5rem 0;
 }
 
+article a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
 article * {
   margin: 1.5rem 0;
 }
@@ -251,6 +258,10 @@ iframe {
   height: 50vh;
 }
 
+.desktop {
+  display: none;
+}
+
 
 /********************************************************** Tablet **********************************************************/
 
@@ -279,6 +290,96 @@ iframe {
   .laptopflex {
     flex-direction: row;
     justify-content: center;
+  }
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: initial;
+    position: relative;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  header *{
+    padding: 0rem 2rem;
+    overflow-x: hidden;
+
+  }
+  .main-image {
+    display: flex;
+    justify-content: center;
+  }
+  .main-image img{
+    height: 25rem;
+    box-shadow: red 0px 6px 12px -2px, red 0px 3px 7px -3px;
+    width: auto;
+    margin: 2rem auto;
+    border-radius: 58% 42% 47% 53% / 64% 43% 57% 36%  ;
+  }
+
+  .main-image h1 {
+    position: absolute;
+    bottom: 3rem;
+    right: 40rem;
+  }
+
+  .chosen {
+    background-color:var(--main-background-color);
+    color: var(--light-text-color);
+  }
+
+  .banner {
+    width: 25rem;
+  }
+
+  .text-center h3, .text-center p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  .text-center h2 {
+    margin-bottom: 0;
+  }
+
+  article {
+    margin: 8rem 5rem;
+    padding: 2rem 2rem;
+    flex-direction: row;
+    border-radius: 336% 64% 61% 39% / 67% 18% 82% 33%  ;
+    box-shadow: red 0px 6px 12px -2px, red 0px 3px 7px -3px;
+  }
+
+  article * {
+    margin: 0 2em;
+    color: var(--light-text-color);
+    background-color: inherit;
+  }
+
+  article p, section p, p, footer p {
+    font-size: 1.2rem;
+  }
+
+  .button-style {
+    font-size: 1rem;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+  }
+
+  nav a:hover {
+    color: red;
+  }
+
+  .cocktail-container {
+    padding: 5rem 20rem;
+  }
+
+  .buttons {
+    margin: 1rem 5rem;
+    height: fit-content;
+  }
+
+  section.flex {
+    text-align: center;
   }
 
 }

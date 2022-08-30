@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import Nav from "./Nav";
+import Navbar from "./Navbar";
 import burger from "../assets/menu.png";
-import croix from "../assets/croix.png";
 import logo from "../assets/Montecito.gif";
 
 function Burger() {
@@ -9,7 +10,11 @@ function Burger() {
 
   return (
     <header className="flex padding-header between al-center">
-      <button type="button" onClick={() => setOpenBurger(!openBurger)}>
+      <button
+        type="button"
+        onClick={() => setOpenBurger(!openBurger)}
+        className="mobile"
+      >
         <img
           src={burger}
           alt="menu de navigation sur le site internet - trois lignes de navigation"
@@ -18,40 +23,10 @@ function Burger() {
       <Link to="/">
         <img src={logo} alt="logo of Montecito" className="logo-mobile" />
       </Link>
-      {openBurger && (
-        <nav className="flex col openBurger between">
-          <button
-            type="button"
-            onClick={() => setOpenBurger(false)}
-            className="croix"
-          >
-            <img
-              src={croix}
-              alt="croix pour fermer la navigation sur la page"
-            />
-          </button>
-          <Link to="/">
-            <button type="button" onClick={() => setOpenBurger(false)}>
-              Accueil
-            </button>
-          </Link>
-          <Link to="/Carte">
-            <button type="button" onClick={() => setOpenBurger(false)}>
-              Carte
-            </button>
-          </Link>
-          <Link to="/Evenements">
-            <button type="button" onClick={() => setOpenBurger(false)}>
-              Evenements
-            </button>
-          </Link>
-          <Link to="/Contact">
-            <button type="button" onClick={() => setOpenBurger(false)}>
-              Contact
-            </button>
-          </Link>
-        </nav>
-      )}
+      {openBurger && <Nav setOpenBurger={setOpenBurger} />}
+      <div className="desktop">
+        <Navbar setOpenBurger={setOpenBurger} />
+      </div>
     </header>
   );
 }

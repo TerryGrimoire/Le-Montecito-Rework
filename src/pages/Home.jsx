@@ -20,15 +20,10 @@ function Home() {
       {HomeData.map((data) => (
         <article>
           <h2>{data.title}</h2>
-          <img src={data.img} alt={data.alt} className="banner" />
+          <Link to={data.link}>
+            <img src={data.img} alt={data.alt} className="banner" />
+          </Link>
           <p>{data.description}</p>
-          {data.button && (
-            <Link to={data.link}>
-              <button type="button" className="button-style">
-                {data.button}
-              </button>
-            </Link>
-          )}
         </article>
       ))}
     </div>
