@@ -106,7 +106,7 @@ function Carte() {
                   <p className="small">{drink.prix}€</p>
                   {drink.prix2 && <p className="small">{drink.prix2}€</p>}
                 </div>
-                <p className="small">{drink.ingredients}</p>
+                <p className="small ingredients">{drink.ingredients}</p>
               </div>
             ))
           : drinks
@@ -118,7 +118,7 @@ function Carte() {
                     <p className="small">{drink.prix}€</p>
                     {drink.prix2 && <p className="small">{drink.prix2}€</p>}
                   </div>
-                  <p className="small">{drink.ingredients}</p>
+                  <p className="small ingredients">{drink.ingredients}</p>
                 </div>
               ))}
       </section>
