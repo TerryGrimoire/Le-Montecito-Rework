@@ -134,6 +134,7 @@ header, footer {
 .openBurger {
   z-index: 1;
   height: 100%;
+  padding: 0 0 2rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -189,15 +190,17 @@ article button, .button-style {
   background-color: transparent;
 }
 
-.croix {
+button.croix {
   display: flex;
   justify-content: flex-end;
   width: 95%;
   margin-left: 0.5rem;
+  box-shadow: none;
 }
 
 .croix img {
   height: 3rem;
+
 }
 
 .banner {
