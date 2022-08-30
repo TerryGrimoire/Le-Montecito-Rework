@@ -71,7 +71,7 @@ function Carte() {
   };
 
   return (
-    <div>
+    <div className="carte-container">
       <LandingImage data={LandingImageData[1]} />
       <section className="filter-container">
         <button
@@ -103,10 +103,10 @@ function Carte() {
               <div className="cocktail-container">
                 <div className="flex between">
                   <p>{drink.nom}</p>
-                  <p>{drink.prix}€</p>
-                  {drink.prix2 && <p>{drink.prix2}€</p>}
+                  <p className="small">{drink.prix}€</p>
+                  {drink.prix2 && <p className="small">{drink.prix2}€</p>}
                 </div>
-                <p className="ingredients">{drink.ingredients}</p>
+                <p className="small">{drink.ingredients}</p>
               </div>
             ))
           : drinks
@@ -115,10 +115,10 @@ function Carte() {
                 <div className="cocktail-container">
                   <div className="flex between">
                     <p>{drink.nom}</p>
-                    <p>{drink.prix}€</p>
-                    {drink.prix2 && <p>{drink.prix2}€</p>}
+                    <p className="small">{drink.prix}€</p>
+                    {drink.prix2 && <p className="small">{drink.prix2}€</p>}
                   </div>
-                  <p className="ingredients">{drink.ingredients}</p>
+                  <p className="small">{drink.ingredients}</p>
                 </div>
               ))}
       </section>

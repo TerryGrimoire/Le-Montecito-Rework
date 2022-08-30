@@ -76,7 +76,7 @@ p {
 
 header, footer {
   width: 100vw;
-    text-align: center;
+  text-align: center;
   position: relative;
 }
 
@@ -219,15 +219,24 @@ article button, .button-style {
   position: absolute;
   bottom: 0.5rem;
   right: 0.5rem;
-  box-shadow: var(--box-shadow);
 }
 .cocktail-container {
-  margin: 5rem 0 0;
+  padding: 6rem 1.5rem 2rem;
 }
-.ingredients {
+.small {
   font-size: 0.85rem;
 }
 
+
 section > p {
   margin: 2rem;
+}
+
+.carte-container {
+  overflow-x: hidden;
+}
+
+iframe {
+  width: 100%;
+  height: 50vh;
 }
