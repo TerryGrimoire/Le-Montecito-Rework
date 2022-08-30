@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Carte from "./pages/Carte";
 import Evenements from "./pages/Evenements";
 import Contact from "./pages/Contact";
-import Mentions from "./pages/Mentions";
+import MentionsLegales from "./pages/MentionsLegales";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -19,7 +19,7 @@ function App() {
         <Route path="/Carte" element={<Carte />} />
         <Route path="/Evenements" element={<Evenements />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Mentions" element={<Mentions />} />
+        <Route path="/Mentions" element={<MentionsLegales />} />
       </Routes>
       <Footer />
     </BrowserRouter>

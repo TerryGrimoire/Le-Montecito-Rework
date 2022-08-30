@@ -23,6 +23,12 @@ const LandingImageData = [
     src: "https://media1.giphy.com/media/RD2n7uh3PjGg/giphy.gif?cid=ecf05e47iae0afcwoy7u90s06b2i7r037um54qdtcfewvjg5&rid=giphy.gif&ct=g",
     alt: "telephone tournant vintage en train de composer un numéro",
   },
+  {
+    id: 4,
+    title: "Mentions Légales",
+    src: "https://media4.giphy.com/media/MbgUbPUSiuaZy/giphy.gif?cid=ecf05e47jab1ilt2it2lhl8s07r9i4gsixpcdcq312ed8ky9&rid=giphy.gif&ct=g",
+    alt: "juge qui tape avec un marteau sur la table",
+  },
 ];
 
 export default LandingImageData;
