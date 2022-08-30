@@ -8,6 +8,7 @@ const HomeData = [
     alt: "Simon le propriétaire du Montecito pose devant le bar",
     description:
       "Le Montecito est un bar gay-friendly, spécialisé dans la confection de cocktails. Simon, le patron vous y accueille tous les jours de la semaine sans exception.",
+    link: "",
   },
   {
     id: 1,

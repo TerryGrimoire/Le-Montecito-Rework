@@ -76,7 +76,7 @@ function Carte() {
       <section className="filter-container">
         <button
           type="button"
-          className="filter-button"
+          className="filter-button mobile"
           onClick={() => setOpen(!open)}
         >
           <img
@@ -85,7 +85,7 @@ function Carte() {
           />
         </button>
         {open && (
-          <div className="flex wrap col m1-1">
+          <div className="flex wrap col m1-1 laptopflex">
             {categories.map((el) => (
               <button
                 type="button"
@@ -97,6 +97,22 @@ function Carte() {
             ))}
           </div>
         )}
+
+        <div className="desktop flex center buttons">
+          {categories.map((el) => (
+            <button
+              type="button"
+              className={
+                category === el.value
+                  ? "button-style m1-1 chosen"
+                  : "button-style m1-1"
+              }
+              onClick={() => setCategory(el.value)}
+            >
+              {el.button}
+            </button>
+          ))}
+        </div>
 
         {category === "all"
           ? drinks.map((drink) => (
