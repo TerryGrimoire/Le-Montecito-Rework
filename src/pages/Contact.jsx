@@ -14,7 +14,7 @@ function Contact() {
 
       <section className="flex col center al-center">
         <p>
-          Nous sommes joignables par téléphone au 09 86 50 12 07 <br /> ou
+          Nous sommes joignables par téléphone au 09.86.50.12.07 <br /> ou
           directement sur nos réseaux sociaux, via Facebook ou Instagram.
         </p>
         <div className="flex m1-1">
