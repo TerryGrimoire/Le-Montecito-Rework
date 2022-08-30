@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LandingImageData from "../data/LandingImageData";
 import LandingImage from "../components/LandingImage";
 
 function mentionsLegales() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <LandingImage data={LandingImageData[4]} />
