@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import LandingImage from "../components/LandingImage";
 import LandingImageData from "../data/LandingImageData";
 import HomeData from "../data/HomeData";
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="container">
       <LandingImage data={LandingImageData[0]} />

@@ -26,6 +26,7 @@ function Carte() {
   };
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     fetch(
       "https://docs.google.com/spreadsheets/d/e/2PACX-1vTJug-4yBLX6H3RbUPOLygnVFnaRqgXJH-wwDy9gsd7WtdM9plGSaTvE3amkD0GbF9JTCelwo04YbkW/pub?gid=0&single=true&output=csv"
     )

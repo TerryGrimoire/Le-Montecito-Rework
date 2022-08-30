@@ -1,9 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LandingImage from "../components/LandingImage";
 import LandingImageData from "../data/LandingImageData";
 import facebook from "../assets/facebook.png";
 
 function Evenements() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <LandingImage data={LandingImageData[2]} />
