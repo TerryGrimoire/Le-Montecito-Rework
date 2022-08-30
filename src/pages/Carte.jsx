@@ -85,7 +85,7 @@ function Carte() {
           />
         </button>
         {open && (
-          <div className="flex wrap col m1-1">
+          <div className="flex wrap col m1-1 laptopflex">
             {categories.map((el) => (
               <button
                 type="button"

@@ -24,7 +24,9 @@ function Home() {
           <p>{data.description}</p>
           {data.button && (
             <Link to={data.link}>
-              <button type="button">{data.button}</button>
+              <button type="button" className="button-style">
+                {data.button}
+              </button>
             </Link>
           )}
         </article>

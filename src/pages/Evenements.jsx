@@ -16,7 +16,10 @@ function Evenements() {
           organiser des évènements au Montecito.
         </p>
         <a href="https://www.facebook.com/montecito.nantes">
-          <button type="button"> Consulter notre page Facebook</button>
+          <button type="button" className="button-style">
+            {" "}
+            Consulter notre page Facebook
+          </button>
         </a>
       </article>
     </div>
