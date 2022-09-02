@@ -114,21 +114,9 @@ function Carte() {
             </button>
           ))}
         </div>
-
-        {category === "all"
-          ? drinks.map((drink) => (
-              <div className="cocktail-container">
-                <div className="flex between">
-                  <p>{drink.nom}</p>
-                  <p className="small">{drink.prix}€</p>
-                  {drink.prix2 && <p className="small">{drink.prix2}€</p>}
-                </div>
-                <p className="small ingredients">{drink.ingredients}</p>
-              </div>
-            ))
-          : drinks
-              .filter((drink) => drink.categorie === category)
-              .map((drink) => (
+        <div className="padding-top">
+          {category === "all"
+            ? drinks.map((drink) => (
                 <div className="cocktail-container">
                   <div className="flex between">
                     <p>{drink.nom}</p>
@@ -137,7 +125,20 @@ function Carte() {
                   </div>
                   <p className="small ingredients">{drink.ingredients}</p>
                 </div>
-              ))}
+              ))
+            : drinks
+                .filter((drink) => drink.categorie === category)
+                .map((drink) => (
+                  <div className="cocktail-container">
+                    <div className="flex between">
+                      <p>{drink.nom}</p>
+                      <p className="small">{drink.prix}€</p>
+                      {drink.prix2 && <p className="small">{drink.prix2}€</p>}
+                    </div>
+                    <p className="small ingredients">{drink.ingredients}</p>
+                  </div>
+                ))}
+        </div>
       </section>
     </div>
   );
