@@ -33,6 +33,7 @@ a {
   text-decoration: none;
 }
 
+
 h1 {
   text-align: right;
   font-size: 2rem;
@@ -236,9 +237,13 @@ button.croix {
   bottom: 0.5rem;
   right: 0.5rem;
 }
-.cocktail-container {
-  padding: 6rem 1.5rem 2rem;
+.padding-top {
+  padding-top: 6rem;
 }
+.cocktail-container {
+  padding: 1rem 1.5rem;
+}
+
 .small {
   font-size: 0.85rem;
 }
@@ -371,7 +376,7 @@ iframe {
   }
 
   .cocktail-container {
-    padding: 5rem 20rem;
+    padding: 1.5rem 20rem;
   }
 
   .buttons {
@@ -382,5 +387,15 @@ iframe {
   section.flex {
     text-align: center;
   }
+
+  .small {
+    font-size: 0.95rem;
+    font-weight: 100;
+    margin-top: -0.25rem;
+  }
+  .padding-top {
+    padding-top: 2rem;
+  }
+
 
 }
