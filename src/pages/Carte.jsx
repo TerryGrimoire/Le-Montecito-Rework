@@ -37,7 +37,7 @@ function Carte() {
 
   const categories = [
     {
-      button: "Voir toute la carte",
+      button: "Toute la carte",
       value: "all",
     },
     {
@@ -61,7 +61,7 @@ function Carte() {
       value: "soft",
     },
     {
-      button: "Les planches apéritives et saucissons",
+      button: "L'apéro",
       value: "apero",
     },
   ];
@@ -105,8 +105,8 @@ function Carte() {
               type="button"
               className={
                 category === el.value
-                  ? "button-style m1-1 chosen"
-                  : "button-style m1-1"
+                  ? "button-style red2 m1-1 chosen"
+                  : "button-style red2 m1-1"
               }
               onClick={() => setCategory(el.value)}
             >

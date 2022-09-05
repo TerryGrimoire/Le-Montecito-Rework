@@ -24,7 +24,7 @@ function Nav({ setOpenBurger }) {
       </Link>
       <Link to="/Evenements">
         <button type="button" onClick={() => setOpenBurger(false)}>
-          Evenements
+          Évènements
         </button>
       </Link>
       <Link to="/Contact">
