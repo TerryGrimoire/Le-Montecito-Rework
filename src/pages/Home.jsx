@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import { Link } from "react-router-dom";
 import LandingImage from "../components/LandingImage";
+import Article from "../components/Article";
 import LandingImageData from "../data/LandingImageData";
 import HomeData from "../data/HomeData";
 
@@ -21,13 +21,7 @@ function Home() {
         <p> 09.86.50.12.07</p>
       </section>
       {HomeData.map((data) => (
-        <article>
-          <h2>{data.title}</h2>
-          <Link to={data.link}>
-            <img src={data.img} alt={data.alt} className="banner" />
-          </Link>
-          <p>{data.description}</p>
-        </article>
+        <Article data={data} />
       ))}
     </div>
   );

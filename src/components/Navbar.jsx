@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="flex between">
       <Link to="/">Accueil</Link>
       <Link to="/Carte">Carte</Link>
-      <Link to="/Evenements">Evenements</Link>
+      <Link to="/Evenements">Évènements</Link>
       <Link to="/Contact">Contact</Link>
     </nav>
   );

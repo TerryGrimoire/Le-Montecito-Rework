@@ -8,7 +8,7 @@ const LandingImageData = [
   {
     id: 1,
     title: "Notre carte",
-    src: "https://media3.giphy.com/media/xT1XGSbmXbxbHJF7iw/giphy.gif?cid=ecf05e47l2t32cqm0v834t3g5gme4jburx38zg3dsk571l59&rid=giphy.gif&ct=g",
+    src: "https://media0.giphy.com/media/YmQPsv5OknV23SBeap/giphy.gif?cid=ecf05e472kczilowlrxzsjzqty0j4zwwav23grlf0zr41ewj&rid=giphy.gif&ct=g",
     alt: "cocktail avec carte du Montecito en fond et bougie sur le coté",
   },
   {

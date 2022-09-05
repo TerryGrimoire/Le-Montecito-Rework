@@ -5,9 +5,9 @@
 
   /** Colors **/
 
-  --main-background-color: red;
-  --secondary-background-color : black;
-  --dark-text-color: black;
+  --main-background-color: #da0000;
+  --secondary-background-color : #0e0e0e;
+  --dark-text-color: #0e0e0e;
   --light-text-color: white;
   --box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
   /** Font properties **/
@@ -24,7 +24,7 @@
   padding: 0;
   line-height: 1.6;
   box-sizing: border-box;
-  color: white;
+  color: var(--light-text-color);
   background-color: var(--secondary-background-color);
   border:none;
   font-family: var(--font-text);
@@ -38,7 +38,25 @@ h1 {
   text-align: right;
   font-size: 2rem;
   background-color: transparent;
+  }
+
+  H2 {
+  animation: tracking-in-contract 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
 }
+@keyframes tracking-in-contract {
+  0% {
+    letter-spacing: 1em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    letter-spacing: normal;
+    opacity: 1;
+  }
+}
+
 h2 {
   color: var(--main-background-color);
   text-align: center;
@@ -81,6 +99,7 @@ p {
 
 .logo-mobile {
   height: 3.5rem;
+  border-radius: 58% 42% 47% 53% / 64% 43% 57% 36%  ;
 }
 
 header, footer {
@@ -218,8 +237,8 @@ button.croix {
 
 .banner {
   width: 70%;
-  border-radius: 50%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 50%  ;
+  box-shadow: var(--main-background-color) 0px 6px 12px -2px, var(--main-background-color) 0px 3px 7px -3px;
 }
 
 .padding1 {
@@ -318,7 +337,7 @@ iframe {
   }
   .main-image img{
     height: 25rem;
-    box-shadow: red 0px 6px 12px -2px, red 0px 3px 7px -3px;
+    box-shadow: var(--main-background-color) 0px 6px 12px -2px, var(--main-background-color) 0px 3px 7px -3px;
     width: auto;
     margin: 2rem auto;
     border-radius: 58% 42% 47% 53% / 64% 43% 57% 36%  ;
@@ -348,15 +367,15 @@ iframe {
   }
 
   article {
-    margin: 8rem 5rem;
+    margin: 8rem 10rem;
     padding: 2rem 2rem;
     flex-direction: row;
     border-radius: 336% 64% 61% 39% / 67% 18% 82% 33%  ;
-    box-shadow: red 0px 6px 12px -2px, red 0px 3px 7px -3px;
+    box-shadow: var(--main-background-color) 0px 6px 12px -2px, var(--main-background-color) 0px 3px 7px -3px;
   }
 
   article * {
-    margin: 0 2em;
+    margin: 0.5rem 2em;
     color: var(--light-text-color);
     background-color: inherit;
   }
@@ -372,7 +391,7 @@ iframe {
   }
 
   nav a:hover {
-    color: red;
+    color: var(--main-background-color);
   }
 
   .cocktail-container {
@@ -380,8 +399,15 @@ iframe {
   }
 
   .buttons {
-    margin: 1rem 5rem;
-    height: fit-content;
+    width: 100vw;
+    display: flex;
+    background-color: var(--main-background-color);
+    margin-top: 3rem;
+  }
+
+  .red2 {
+    border-radius: 58% 42% 47% 53% / 64% 43% 57% 36%  ;
+    box-shadow: #850000 0px 6px 12px -2px, #850000 0px 3px 7px -3px;
   }
 
   section.flex {
