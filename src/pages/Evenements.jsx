@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import papa from "papaparse";
 import LandingImage from "../components/LandingImage";
 import Article from "../components/Article";
@@ -35,6 +36,11 @@ function Evenements() {
 
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Le Montecito | Évènements</title>
+        <link rel="canonical" href="https://lemontecito.com/Evenements" />
+      </Helmet>
       <LandingImage data={LandingImageData[2]} />
       {events.map((event) => (
         <Article data={event} />
