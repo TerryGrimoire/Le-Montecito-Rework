@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import papa from "papaparse";
 import LandingImage from "../components/LandingImage";
 import Article from "../components/Article";
@@ -33,10 +34,30 @@ function Evenements() {
       .then((data) => prepareData(data.data));
   }, []);
 
+  let today = new Date();
+  const dd = String(today.getDate()).padStart(2, "0");
+  const mm = String(today.getMonth() + 1).padStart(2, "0"); // January is 0!
+  const yyyy = today.getFullYear();
+
+  today = `${yyyy}/${mm}/${dd}`;
+
+  const filteredEvents = events
+    .filter((event) => event.date.split("/").reverse().join("/") >= today)
+    .sort(
+      (a, b) =>
+        parseInt(a.date.split("/").reverse().join(""), 10) -
+        parseInt(b.date.split("/").reverse().join(""), 10)
+    );
+
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Le Montecito | Évènements</title>
+        <link rel="canonical" href="https://lemontecito.com/Evenements" />
+      </Helmet>
       <LandingImage data={LandingImageData[2]} />
-      {events.map((event) => (
+      {filteredEvents.map((event) => (
         <Article data={event} />
       ))}
 

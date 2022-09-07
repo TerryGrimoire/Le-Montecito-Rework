@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import LandingImage from "../components/LandingImage";
 import LandingImageData from "../data/LandingImageData";
 import facebook from "../assets/facebook.png";
@@ -10,6 +11,11 @@ function Contact() {
   }, []);
   return (
     <div>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Le Montecito | Contact</title>
+        <link rel="canonical" href="https://lemontecito.com/Contact" />
+      </Helmet>
       <LandingImage data={LandingImageData[3]} />
 
       <section className="flex col center al-center">

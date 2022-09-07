@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import papa from "papaparse";
 import LandingImage from "../components/LandingImage";
 import LandingImageData from "../data/LandingImageData";
@@ -73,6 +74,11 @@ function Carte() {
 
   return (
     <div className="carte-container">
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Le Montecito | Carte</title>
+        <link rel="canonical" href="https://lemontecito.com/Carte" />
+      </Helmet>
       <LandingImage data={LandingImageData[1]} />
       <section className="filter-container">
         <button
