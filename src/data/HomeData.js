@@ -36,7 +36,7 @@ const HomeData = [
     img: "https://media1.giphy.com/media/Nc1d6apaHowmY/giphy.gif?cid=ecf05e47d16yllx1hoqt7vuv616arifozelqxcwlzsoo3if8&rid=giphy.gif&ct=g",
     alt: "Téléphone rétro qui compose un numéro",
     description:
-      "Vous pouvez nous joindre par téléphone ou directement via notre réseaux sociaux, Facebook ou Instagram. Nous répondons généralement dans la journée. N'hésitez pas d'ailleurs à nous tager dans vos stories.",
+      "Vous pouvez nous joindre par téléphone ou directement via nos réseaux sociaux, Facebook ou Instagram. Nous répondons généralement dans la journée. N'hésitez pas d'ailleurs à nous taguer dans vos stories.",
     button: "Nous contacter",
     link: "/Contact",
   },

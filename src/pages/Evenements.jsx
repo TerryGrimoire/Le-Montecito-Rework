@@ -64,10 +64,10 @@ function Evenements() {
       <article>
         <h2>Notre page Facebook</h2>
         <p>
-          Nos soirées et évènements sont listées sur notre page Facebook et sur
+          Nos soirées et évènements sont listés sur notre page Facebook et sur
           notre compte instagram. Vous pouvez également nous contacter pour plus
-          d'informations sur ou si vous souhaitez faire un partenariat ou
-          organiser des évènements au Montecito.
+          d'informations ou si vous souhaitez faire un partenariat ou organiser
+          des évènements au Montecito.
         </p>
         <a
           href="https://www.facebook.com/montecito.nantes/events"
